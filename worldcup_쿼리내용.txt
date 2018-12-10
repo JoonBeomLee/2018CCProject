@@ -1,0 +1,50 @@
+#create database worldcup;
+#use worldcup;
+ create table person (
+	num int(2),
+	name varchar(20),
+	win int(3),
+	lose int(3)
+);
+#drop table person;
+#drop table member;
+ insert into person values(1,'흑우',0,0);
+insert into person values(2,'오리너구리',0,0);
+insert into person values(3,'캥거루',0,0);
+insert into person values(4,'람쥐',0,0);
+insert into person values(5,'아르마딜로',0,0);
+insert into person values(6,'고라니',0,0);
+insert into person values(7,'나무늘보',0,0);
+insert into person values(8,'노루',0,0);
+insert into person values(9,'쿼카',0,0);
+insert into person values(10,'맥',0,0);
+insert into person values(11,'뱁새',0,0);
+insert into person values(12,'루메루스',0,0);
+insert into person values(13,'봙봙이',0,0);
+insert into person values(14,'넓적부리황새',0,0);
+insert into person values(15,'우라간킨',0,0);
+insert into person values(16,'유니콘',0,0);
+ create table member (
+	id varchar(20),
+	pw varchar(20),
+	gamecount int(2),
+	g1 int(2),
+	g2 int(2),
+	g3 int(2),
+	g4 int(2),
+	g5 int(2),
+	g6 int(2),
+	g7 int(2),
+	g8 int(2),
+	g9 int(2),
+	g10 int(2),
+	g11 int(2),
+	g12 int(2),
+	g13 int(2),
+	g14 int(2),
+	g15 int(2)
+);
+select * from person;
+select * from member;
+show variables like "max_connections";
+set global max_connections = 300;
